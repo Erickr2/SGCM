@@ -1,0 +1,33 @@
+main.img-hospital {
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card{
+  display: flex;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  max-width: fit-content;
+}
+
+.dos-columnas{
+  display: grid;  /**cambiamos el display**/
+  grid-template-columns: 50% 50%; /** lo dividimos en dos partes 50 y 50**/
+  column-gap: 2rem; /**Le damos separacion a las dos columnas**/
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-danger{
+  margin-right: 1.5rem;
+}
+
+.btn-success{
+  margin-top: 1rem;
+}

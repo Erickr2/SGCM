@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+        integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
+    <link href="../assets/styles/index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../img/linea-de-pulso.png" />
+    <title>Sistema Gestion de Citas</title>
+    <script defer src="../js/perfil.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1ABC9C;">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item mx-2">
+                    <img src="../img/linea-de-pulso.png" style="max-width:3.8rem ; max-height: ;">
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" href="./crear-cita.html">Mis citas</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" href="./historialClinico.html">Historial Clinico</a>
+                </li>
+                <div class="dropdown mx-2">
+                    <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Mi perfil
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">ver mi perfil</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./index.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="container d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-1 pt-2">
+            <div class="col col-md-12">
+                <form style="width: 100% " class=" border border-success  p-2">
+                    <fieldset>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <label for="nombre" class="form-label mt-2 mr-4 " style="width: 300px;">Nombre
+                            </label>
+                            <input disabled style="width: 300px;" type="text" class="form-control" id="nombre">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="exampleInputPassword1 " class="form-label mt-2 mr-4"
+                                style="width: 300px;">Apellido paterno</label>
+                            <input disabled style="width: 300px;" type="text " class="form-control " id="apellidop">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="exampleInputPassword1 " class="form-label mt-2 mr-4"
+                                style="width: 300px;">Apellido materno</label>
+                            <input disabled style="width: 300px;" type="text " class="form-control " id="apellidom">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <label for="fecha_nacimiento" class="form-label mt-2 mr-4" style="width: 300px;">Fecha
+                                de nacimiento</label>
+                            <input disabled style="width: 300px;" type="text" class="form-control "
+                                id="fecha_nacimiento">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <label for="NSS" class="form-label mt-2 mr-4" style="width: 300px;">NSS</label>
+                            <input disabled style="width: 300px;" type="text" class="form-control " id="NSS">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="CURP" class="form-label mt-2 mr-4 " style="width: 300px; ">Curp</label>
+                            <input disabled style="width: 300px; " type="text " class="form-control " id="CURP">
+                        </div>
+                        <!-- <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="telefono" class="form-label mt-2 mr-4 " style="width: 300px; ">Teléfono</label>
+                            <input disabled style="width: 300px; " type="tel " class="form-control " id="telefono">
+                        </div> -->
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="calle" class="form-label mt-2 mr-4 " style="width: 300px; ">Calle</label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="calle">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="exampleInputPassword1 " class="form-label mt-2 mr-4 "
+                                style="width: 300px; ">Número interior</label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="numero_int">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="exampleInputPassword1 " class="form-label mt-2 mr-4 "
+                                style="width: 300px; ">Número exterior</label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="numero_ext">
+                        </div>
+
+                        <!-- <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="exampleInputPassword1 " class="form-label mt-2 mr-4 "
+                                style="width: 300px; ">Código postal</label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="CP">
+                        </div> -->
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="exampleInputPassword1 " class="form-label mt-2 mr-4 "
+                                style="width: 300px; ">Alcaldía</label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="alcaldia">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="exampleInputPassword1 " class="form-label mt-2 mr-4 "
+                                style="width: 300px; ">Colonia</label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="colonia">
+                        </div>
+
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container d-flex justify-content-center mb-5">
+        <div class="row d-flex justify-content-center mt-1 pt-2 ">
+            <div class="col col-md-12 ">
+                <form style="width: 644px " class=" border border-success p-2 ">
+                    <fieldset>
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="ocupacion" class="form-label mt-2 mr-4 " style="width: 300px; ">Ocupación
+                            </label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="ocupacion">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="estado-civil" class="form-label mt-2 mr-4 " style="width: 300px; ">Estado
+                                civil</label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="estado-civil">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="tipo-sangre" class="form-label mt-2 mr-4 " style="width: 300px; ">Tipo de sangre
+                            </label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="tipo-sangre">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3 ">
+                            <label for="alergia" class="form-label mt-2 mr-4 " style="width: 300px; ">Es alérgico a:
+                            </label>
+                            <input disabled style="width: 300px; " type="text" class="form-control " id="alergia">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js "
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/ "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>
+
+</html>

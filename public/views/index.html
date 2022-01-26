@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+        integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
+    <link href="../styles/index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../img/linea-de-pulso.png" />
+    <title>Sistema Gestion de Citas</title>
+    <script defer src="../js/login.js"></script>
+</head>
+
+<body>
+    <main class='container-fluid vh-100 d-flex justify-content-center align-items-center bg-primary img-hospital'>
+        <div class='row d-flex justify-content-center align-items-center'>
+            <div class='col-md-12 d-flex justify-content-center align-items-center'>
+                <form class='border border-5 p-5' style='width: 400px; background-color: #1ABC9C;' id='form-login'>
+                    <h4 class='mb-4' style=" font-family: sans-serif; color: #333534;">Sistema Gestion de Citas</h4>
+                    <div class="mb-3">
+                        <label for="user" class="form-label text-light">Usuario:</label>
+                        <input type="email" class="form-control" id="user">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-light">Contraseña:</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class='d-flex justify-content-center'>
+                        <button type="submit" id='btn-login' class="btn btn-light">Continuar</button>
+                    </div>
+                    <a class="text-white my-4" style='font-size: 12px; cursor: pointer;' id='create-account'
+                        href="./crear-cuenta.html">¿No tienes
+                        una cuenta? <br /> ¡Crea una aquí!
+                    </a>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+
+
+</html>
